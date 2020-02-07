@@ -24,7 +24,7 @@ export class AppComponent {
         this.fileName = file.name + " " + file.type;  
         const doc = new jsPDF();  
         const base64ImgString = (reader.result as string).split(',')[1];  
-        doc.addImage(base64ImgString, 15, 40, 50, 50);  
+        doc.addImage(base64ImgString, 15, 40, 50, 50);   
         this.filePreview = 'data:image/png' + ';base64,' + base64ImgString;  
         doc.save('TestPDF')  
       };  

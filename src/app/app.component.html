@@ -17,6 +17,9 @@
     <h2><a target="_blank" >Angular blog</a></h2>
   </li>
 
+  <div [ngxSummernote]></div>
+  <div [ngxSummernote]="config"></div>
+  <div [ngxSummernoteView]="content"></div>
   <input type="file" name="image" (change)="onFileChanged($event)">   
 <div class="info" *ngIf="filePreview">  
  <img [src]="sanitize(filePreview)" width="150" height="150"/>   
